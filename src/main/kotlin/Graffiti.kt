@@ -9,7 +9,7 @@ data class Graffiti(
 //класс для хранения вложений о подарке
 class GraffitiAttachment(param: Graffiti) : Attachment {
     override val type: String = "gift"
-    private val graffiti = param
+    val graffiti = param
 
     override fun toString(): String {
         return "\n  $graffiti"

@@ -46,7 +46,7 @@ data class Video(
 //класс для хранения вложений видео
 class VideoAttachment(param: Video) : Attachment {
     override val type: String = "video"
-    private val video = param
+    val video = param
 
     override fun toString(): String {
         return "\n  $video"

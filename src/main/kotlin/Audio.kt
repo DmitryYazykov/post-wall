@@ -17,7 +17,7 @@ data class Audio(
 //класс для хранения вложения аудиозаписи
 class AudioAttachment(param: Audio) : Attachment {
     override val type: String = "audio"
-    private val audio = param
+    val audio = param
 
     override fun toString(): String {
         return "\n  $audio"

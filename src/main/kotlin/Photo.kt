@@ -14,7 +14,7 @@ data class Photo(
 //класс для хранения вложений фотографии
 class PhotoAttachment(param: Photo) : Attachment {
     override val type: String = "photo"
-    private val photo = param
+    val photo = param
 
     override fun toString(): String {
         return "\n  $photo"

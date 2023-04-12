@@ -17,7 +17,7 @@ data class Note(
 //класс для хранения вложений о заметке
 class NoteAttachment(param: Note) : Attachment {
     override val type: String = "note"
-    private val note = param
+    val note = param
 
     override fun toString(): String {
         return "\n  $note"
