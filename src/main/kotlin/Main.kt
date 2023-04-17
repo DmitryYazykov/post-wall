@@ -207,4 +207,24 @@ fun main() {
 
     //обновление поста и вывод результата
     println(WallService.update(post4))
+
+    val comment = Comment(
+        12345,
+        2,
+        12345678,
+        2023,
+        "Текст комментария",
+        null,
+        12345,
+        12345,
+        arrayOf(attachmentAudio),
+        null,
+        null
+    )
+
+    try {
+        WallService.createComment(comment)
+    } catch (e: PostNotFoundException) {
+        println(e.message)
+    }
 }

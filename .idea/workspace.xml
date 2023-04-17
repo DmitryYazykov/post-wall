@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c5c2ab-8446-427a-a237-7881628394a6" name="Changes" comment="Add attachments">
+    <list default="true" id="d3c5c2ab-8446-427a-a237-7881628394a6" name="Changes" comment="Assignment fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Audio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Audio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Graffiti.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Graffiti.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Note.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Photo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Photo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Video.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Video.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestWallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestWallService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +25,10 @@
       <list>
         <option value="JUnit4 Test Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -111,30 +108,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.TestWallService">
-    <configuration name="TestAdd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TestAdd&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
     <configuration name="TestWallService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -183,6 +156,30 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="TestWallService.shouldThrow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TestWallService.shouldThrow&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="TestWallService.updateExisting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -217,10 +214,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TestWallService" />
-        <item itemvalue="Gradle.TestWallService.updateExisting" />
+        <item itemvalue="Gradle.TestWallService.shouldThrow" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.TestWallService.updateExisting" />
         <item itemvalue="Gradle.TestWallService.add" />
-        <item itemvalue="Gradle.TestAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681192185408</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Assignment fixes">
+      <created>1681276154279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681276154279</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +296,7 @@
     <MESSAGE value="Add TestWallService-Add" />
     <MESSAGE value="Add TestWallService-Update" />
     <MESSAGE value="Add attachments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add attachments" />
+    <MESSAGE value="Assignment fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assignment fixes" />
   </component>
 </project>
