@@ -3,6 +3,8 @@ object WallService {
     private var posts: Array<Post> = emptyArray()
     private var nextId: Int = 1
 
+    private var comments = emptyArray<Comment>()
+
     //метод для создания записи
     fun add(post: Post): Post {
         val newPost = post.copy(id = nextId)
@@ -21,5 +23,17 @@ object WallService {
             }
         }
         return false
+    }
+
+    //метод для комментирования
+    fun createComment(comment: Comment): Boolean {
+        for (post in posts) {
+            if (comment.postId == post.id) {
+                comments += comment
+                println("\n $comment")
+                return true
+            }
+        }
+        throw PostNotFoundException("\nПост не найден.")
     }
 }
