@@ -1,6 +1,7 @@
 import org.junit.Test
 
 import org.junit.Assert.*
+import org.junit.Before
 
 class TestWallService {
 
@@ -574,9 +575,125 @@ class TestWallService {
         assertFalse(result)
     }
 
-    //тест для проверки добавления комментария
+    //аннотация @Before для очистки синглтона перед каждым тестом
+    @Before
+    fun beforeStartNewTest() {
+        WallService.clear()
+    }
+
+    //тест для проверки добавления комментария к существующему посту
+    @Test
+    fun commentExistingPost() {
+        val video = Video(
+            123,
+            12345,
+            "Name video",
+            "Text video",
+            30,
+            null,
+            null,
+            2022,
+            2023,
+            25,
+            50,
+            10,
+            "Flash_player",
+            "platform",
+            true,
+            true,
+            "Key",
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            true,
+            false,
+            150,
+            350,
+            123456789,
+            true,
+            false,
+            true,
+            1,
+            "movie",
+            0,
+            "started",
+            true,
+            false,
+            15,
+            VideoLikes(50, true),
+            VideoReposts(10, 15, 5, false)
+        )
+        val attachmentVideo = VideoAttachment(video)
+
+        val audio = Audio(
+            12345,
+            123456789,
+            "Rammstein",
+            "Mutter",
+            268,
+            "url",
+            111,
+            222,
+            7,
+            2023,
+            1,
+            1
+        )
+        val attachmentAudio = AudioAttachment(audio)
+
+        val post = Post(
+            111,
+            12345,
+            12345,
+            null,
+            2023,
+            "Текст поста 1",
+            12345,
+            12345,
+            false,
+            Comments(canPost = false, groupCanPost = false, canClose = false, canOpen = false),
+            Copyright(123, "Link1", "Name1", "Type1"),
+            Likes(50, false, false, true),
+            Reposts(100, true),
+            Views(15),
+            "Post",
+            null,
+            111,
+            true,
+            true,
+            true,
+            true,
+            false,
+            arrayOf(attachmentAudio, attachmentVideo),
+            null
+        )
+        WallService.add(post)
+
+        val comment = Comment(
+            12345,
+            1,
+            12345678,
+            2023,
+            "Текст комментария",
+            null,
+            12345,
+            12345,
+            arrayOf(attachmentAudio),
+            null,
+            null
+        )
+
+        val result = WallService.createComment(comment)
+        assertTrue(result)
+    }
+
+    //тест для проверки добавления комментария к не существующему посту
     @Test(expected = PostNotFoundException::class)
-    fun shouldThrow() {
+    fun commentNotExistingPost() {
          val video = Video(
              123,
              12345,

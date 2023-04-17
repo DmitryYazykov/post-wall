@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3c5c2ab-8446-427a-a237-7881628394a6" name="Changes" comment="Assignment fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestWallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestWallService.kt" afterDir="false" />
-    </list>
+    <list default="true" id="d3c5c2ab-8446-427a-a237-7881628394a6" name="Changes" comment="PostNotFoundException" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,9 +210,9 @@
       <list>
         <item itemvalue="Gradle.TestWallService" />
         <item itemvalue="Gradle.TestWallService.shouldThrow" />
+        <item itemvalue="Gradle.TestWallService.add" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.TestWallService.updateExisting" />
-        <item itemvalue="Gradle.TestWallService.add" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681276154279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="PostNotFoundException">
+      <created>1681711383279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681711383279</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +299,7 @@
     <MESSAGE value="Add TestWallService-Update" />
     <MESSAGE value="Add attachments" />
     <MESSAGE value="Assignment fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment fixes" />
+    <MESSAGE value="PostNotFoundException" />
+    <option name="LAST_COMMIT_MESSAGE" value="PostNotFoundException" />
   </component>
 </project>

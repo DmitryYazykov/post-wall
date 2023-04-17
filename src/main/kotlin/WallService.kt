@@ -36,4 +36,11 @@ object WallService {
         }
         throw PostNotFoundException("\nПост не найден.")
     }
+
+    //метод для сброса значений
+    fun clear() {
+        posts = emptyArray()
+        comments = emptyArray()
+        nextId = 1
+    }
 }
